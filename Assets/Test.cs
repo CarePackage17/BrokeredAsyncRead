@@ -1,7 +1,6 @@
 using System;
 using System.IO;
 using System.Text;
-using System.Threading.Tasks;
 using Unity.Collections;
 using Unity.Collections.LowLevel.Unsafe;
 using Unity.IO.LowLevel.Unsafe;
@@ -55,12 +54,4 @@ public class Test : MonoBehaviour
             Debug.Log($"File handle status: {handle.Status}");
         }
     }
-
-    //async Task<string> GetFolderPathAsync()
-    //{
-    //    var libraryId = Windows.Storage.KnownLibraryId.Pictures;
-    //    var lib = await Windows.Storage.StorageLibrary.GetLibraryAsync(libraryId);
-
-    //    return lib.SaveFolder.Path;
-    //}
 }
